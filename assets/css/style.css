@@ -1,5 +1,10 @@
 /* Style for all Pages */
 /* Header */
+#total-wrapper {
+  min-height: 100%;
+  margin-bottom: -55px;
+}
+
 #top {
     position: fixed;
     z-index: 99;
@@ -30,7 +35,7 @@ nav {
     margin-top: 25px;
   }
   
-  nav a {
+nav a {
     display: inline-block;
     padding-left: 15px;
     margin-left: 15px;
@@ -40,7 +45,7 @@ nav {
     border-left: 1px solid #efefef;
   }
   
-  nav a:first-child {
+nav a:first-child {
     border-left: 0 none;
   }
 
@@ -67,7 +72,7 @@ html, body {
     min-height: calc(100vh - 70px);
   }
   
-  .page {
+.page {
     float: left;
     width: 100%;
     max-width: 960px;
@@ -77,67 +82,56 @@ html, body {
     border: 1px solid #ddd;
   }  
 
-  .container {
+.container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     clear: both;
   }
   
-  h1,
-  h2,
-  h3,
-  p {
+h1, h2, h3, p {
     margin-bottom: 20px;
   }
   
-  p:last-child {
+p:last-child {
     margin-bottom: 0;
   }
   
-  h1,
-  h2,
-  h3 {
+h1, h2, h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
     color: #4aaaa5;
   }
   
-  h1 {
+h1 {
     padding-bottom: 20px;
     font-size: 30px;
     line-height: 49px;
     border-bottom: 3px solid #ddd;
   }
   
-  h2,
-  h3 {
+h2, h3 {
     font-size: 22px;
   }
 
 /* Footer */
+.content-push {
+  height: 55px;
+}
+
 footer {
-    padding: 30px 0;
     clear: both;
     font-size: 12px;
-    color: #fff;
     color: #ccc;
     text-align: center;
     background: #666;
-    border-top: 8px solid #4aaaa5;
-    height: 50px;
-  }
-
-h3,
-h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid #eee;
+    border-top: 5px solid #4aaaa5;
+    height: 55px;
+    margin: 0 auto;
   }
 
 /* Style for About Page */
-  .pic {
+.pic {
     float: left;
     width: 200px;
     height: auto;
@@ -191,17 +185,17 @@ h2 {
     overflow: auto;
   }
   
-  .grid:nth-child(even) {
+.grid:nth-child(even) {
     margin-right: 40px;
   }
   
-  .grid img {
+.grid img {
     width: 100%;
     border: 0 none;
     opacity: 0.8;
   }
   
-  .grid h3 {
+.grid h3 {
     position: absolute;
     bottom: 20px;
     width: 100%;
@@ -214,4 +208,3 @@ h2 {
     background: #4aaaa5;
     border-bottom: 0;
   }
-  
